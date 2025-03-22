@@ -30,7 +30,5 @@ serve(
   },
   (info) => {
     logger.info(`Server is running on http://localhost:${info.port}`);
-    logger.info(`Chat endpoint available at http://localhost:${info.port}/api/chat`);
-    logger.info(`Streaming chat endpoint available at http://localhost:${info.port}/api/chat/stream`);
   },
 );

@@ -1,9 +1,12 @@
 import { Hono } from "hono";
 import chatRouter from "./chat.routes.js";
+import documentRoute from "./document.route.js";
 
 const router = new Hono();
 
-// Mount the chat router
+// Mount the routers
 router.route("/api", chatRouter);
+
+router.route("/api", documentRoute);
 
 export default router;
